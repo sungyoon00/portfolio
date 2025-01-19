@@ -1,0 +1,381 @@
+/* General Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', Times, sans-serif;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+/* About Container */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
+
+/* About Text Styling */
+.about-text p {
+  font-size: 20rem;
+  max-width: 800px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* Credits Styling */
+.credits {
+  font-size: 0.8rem;
+  color: grey;
+}
+
+.credits ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.credits li {
+  margin: 5px 0;
+}
+
+
+
+
+/* Landing Page */
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+  position: relative;
+}
+
+
+/* Make the name link clickable */
+.name-link {
+  text-decoration: none; /* Remove the default underline */
+  color: inherit; /* Inherit the color of the name */
+  display: block; /* Allow it to be a block-level element */
+  position: absolute; /* Position it absolutely to keep it centered */
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%); /* Center it horizontally */
+  z-index: 10;
+}
+
+/* Title styling */
+.name {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  font-weight: normal; /* Ensure text is not bold */
+  text-align: center; /* Ensure the text stays centered */
+}
+
+
+/* Hover Effect */
+.name:hover {
+  color: rgb(0, 128, 255);
+  transition:  0.5s ease;
+}
+
+.split {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Add the background image with a pseudo-element */
+.section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.5s ease, filter 0.5s ease;
+  filter: brightness(35%) saturate(35%); /* Default dimming and desaturation */
+  z-index: -1; /* Ensure the background stays behind the text */
+}
+
+.sonics::before {
+  background-image: url('sonics.jpg'); /* Ensure the image path is correct */
+}
+
+.visuals::before {
+  background-image: url('visuals.jpg'); /* Ensure the image path is correct */
+}
+
+/* Hover effect to make background image brighter, more saturated, and zoom */
+.section:hover::before {
+  transform: scale(1.05); /* Zoom effect on the background image only */
+  filter: brightness(100%) saturate(50%); /* Brighten and unsaturate the image */
+}
+
+/* Section text */
+.section h2 {
+  font-size: 3rem;
+  text-transform: lowercase;
+  z-index: 1; /* Ensure text is above the background */
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  font-weight: normal; /* Set font-weight to normal to avoid bold text */
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Menu Button */
+.menu-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  z-index: 10; /* Ensure it’s below the overlay menu */
+  transition: transform 0.3s ease;
+}
+
+.menu-button:hover {
+  transform: scale(1.2);
+}
+
+/* Menu Overlay */
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 20; /* Ensure the overlay is above everything else */
+}
+
+.menu-overlay.active {
+  display: flex;
+}
+
+
+
+/* Menu Content */
+.menu-content ul {
+  list-style: none; /* Remove the bullet points */
+  padding: 0;
+}
+
+.menu-content li {
+  margin: 15px 0;
+}
+
+.menu-content a {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem; /* Increase the font size */
+  transition: color 0.3s ease;
+}
+
+.menu-content a:hover {
+  color: #4281ff;
+}
+
+
+
+/* Close Button */
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  z-index: 30; /* Ensure close button is above the menu button */
+}
+
+
+
+
+
+
+
+/* Footer */
+.footnotes {
+  position: fixed; /* Keep it fixed at the bottom of the screen */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  line-height: 1.2; /* Increase line height for better readability */
+  text-align: center;
+  padding: 0px 0; /* Add some space around the content */
+  font-family: 'Times New Roman', Times, sans-serif;
+  z-index: 5; /* Ensure it stays above the background */
+  background: transparent; /* Make the background transparent */
+}
+
+/* Social media icon container */
+.sns {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Adjust gap between icons */
+  margin-bottom: 20px; /* Add space below the icons */
+}
+
+.sns a {
+  text-decoration: none;
+}
+
+.sns i {
+  font-size: 25px;
+  margin: 0 10px;
+  color: white;
+}
+
+/* Instagram Hover */
+.fa-instagram:hover {
+  color: rgb(195, 66, 141);
+}
+
+/* YouTube Hover */
+.fa-youtube:hover {
+  color: rgb(195, 66, 66);
+}
+
+/* SoundCloud Hover */
+.fa-soundcloud:hover {
+  color: rgb(195, 113, 66);
+}
+
+/* Contact Info Styling */
+.footnotes h3 {
+  font-size: 1rem;
+  margin: 5px 0; /* Add space between each contact line */
+  font-weight: normal; /* Ensure the text is not bold */
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+/* responsive */
+
+@media only screen and (max-width: 965px){
+
+  .name {
+    font-size: 2rem;
+  
+  }
+
+  .section h2 {
+    font-size: 2rem;
+
+  }
+  .footnotes h3 {
+    font-size: 0.85rem;
+    margin: 5px 0; /* Add space between each contact line */
+    font-weight: normal; /* Ensure the text is not bold */
+    color: white;
+  }
+
+  .sns i {
+    font-size: 22px;
+  }
+  
+  .menu-button {
+  
+    font-size: 2.4rem;
+  }
+
+  .close-button {
+    font-size: 2.4rem;
+  }
+} 
+
+
+
+@media only screen and (max-width: 609px){
+    .name {
+      font-size: 1.7rem;
+    
+    }
+  
+    .section h2 {
+      font-size: 1.8rem;
+  
+    }
+    .footnotes h3 {
+      font-size: 0.80rem;
+      margin: 5px 0; /* Add space between each contact line */
+      font-weight: normal; /* Ensure the text is not bold */
+      color: white;
+    }
+  
+    .sns i {
+      font-size: 20px;
+    }
+    
+    .menu-button {
+    
+      font-size: 2.2rem;
+      top: 30px;
+      right: 10px;
+    }
+  
+    .close-button {
+      font-size: 2.2rem;
+      top: 50px;
+      right: 10px;
+    }
+ 
+  }
+
+  
+  
+
+  
+  @media only screen and (max-width: 370px){
+  
+   
+ 
+  }
+  
+  @media only screen and (max-width: 264px){
+    
+  
+   
+  }
+  

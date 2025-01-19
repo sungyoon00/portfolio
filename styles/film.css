@@ -1,0 +1,424 @@
+/* General Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', Times, sans-serif;
+  box-sizing: border-box;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Landing Page */
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  color: white;
+  position: relative;
+  padding-top: 200px;
+}
+
+
+
+/* Container Styling */
+.container {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  flex-direction: column; /* Stacks elements vertically */
+}
+
+/* Iframe Styling */
+iframe {
+  width: 400%; /* Adjust width */
+  height: 500px; /* Fixed height */
+  padding: 20px;
+}
+
+
+
+/* Make the name link clickable */
+.name-link {
+  text-decoration: none; /* Remove the default underline */
+  color: inherit; /* Inherit the color of the name */
+  display: block; /* Allow it to be a block-level element */
+  position: absolute; /* Position it absolutely to keep it centered */
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%); /* Center it horizontally */
+  z-index: 10;
+}
+
+/* Title styling */
+.name {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  font-weight: normal; /* Ensure text is not bold */
+  text-align: center; /* Ensure the text stays centered */
+}
+
+
+/* Hover Effect */
+.name:hover {
+  color: rgb(0, 128, 255);
+  transition:  0.5s ease;
+}
+
+
+/* Button Reset */
+button, .back-button, .next-button {
+  appearance: none; /* Remove browser-specific styling */
+  -webkit-appearance: none; /* Remove webkit-specific styling */
+  -moz-appearance: none; /* Remove Firefox-specific styling */
+  border: none; /* Remove default border */
+  background: none; /* Remove default background */
+  padding: 0; /* Reset padding */
+  margin: 0; /* Reset margin */
+  cursor: pointer; /* Ensure it's clickable */
+}
+
+/* Back Button Styling */
+.back-button {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Next Button Styling */
+.next-button {
+  position: absolute;
+  top: 100px;
+  right: 100px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.next-button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+
+
+
+
+/* Menu Button */
+.menu-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  z-index: 10; /* Ensure it’s below the overlay menu */
+  transition: transform 0.3s ease;
+}
+
+.menu-button:hover {
+  transform: scale(1.2);
+}
+
+/* Menu Overlay */
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 20; /* Ensure the overlay is above everything else */
+}
+
+.menu-overlay.active {
+  display: flex;
+}
+
+
+
+/* Menu Content */
+.menu-content ul {
+  list-style: none; /* Remove the bullet points */
+  padding: 0;
+}
+
+.menu-content li {
+  margin: 15px 0;
+}
+
+.menu-content a {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem; /* Increase the font size */
+  transition: color 0.3s ease;
+}
+
+.menu-content a:hover {
+  color: #4281ff;
+}
+
+
+
+/* Close Button */
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  z-index: 30; /* Ensure close button is above the menu button */
+}
+
+
+
+
+
+
+
+
+/* Footer */
+.footnotes {
+  position: bottom; /* Keep it fixed at the bottom of the screen */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  line-height: 1.2; /* Increase line height for better readability */
+  text-align: center;
+  padding: 0px 0; /* Add some space around the content */
+  font-family: 'Times New Roman', Times, sans-serif;
+  z-index: 5; /* Ensure it stays above the background */
+  background: transparent; /* Make the background transparent */
+}
+
+/* Social media icon container */
+.sns {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Adjust gap between icons */
+  margin-bottom: 20px; /* Add space below the icons */
+}
+
+.sns a {
+  text-decoration: none;
+}
+
+.sns i {
+  font-size: 25px;
+  margin: 0 10px;
+  color: white;
+}
+
+/* Instagram Hover */
+.fa-instagram:hover {
+  color: rgb(195, 66, 141);
+}
+
+/* YouTube Hover */
+.fa-youtube:hover {
+  color: rgb(195, 66, 66);
+}
+
+/* SoundCloud Hover */
+.fa-soundcloud:hover {
+  color: rgb(195, 113, 66);
+}
+
+/* Contact Info Styling */
+.footnotes h3 {
+  font-size: 1rem;
+  margin: 5px 0; /* Add space between each contact line */
+  font-weight: normal; /* Ensure the text is not bold */
+  color: white;
+}
+
+
+
+
+
+
+/* responsive */
+
+@media only screen and (max-width: 1500px){
+
+  iframe {
+    width: 400%; /* Make it responsive */
+    
+    height: 500px; /* Adjust the height */
+    border: none; /* Remove border if any */
+  }
+  
+} 
+
+@media only screen and (max-width: 1200px){
+
+  iframe {
+    width: 300%; /* Make it responsive */
+    
+    height: 500px; /* Adjust the height */
+    border: none; /* Remove border if any */
+  }
+  
+} 
+
+@media only screen and (max-width: 965px){
+
+  .name {
+    font-size: 2rem;
+  
+  }
+
+  .section h2 {
+    font-size: 2rem;
+
+  }
+  .footnotes h3 {
+    font-size: 0.85rem;
+    margin: 5px 0; /* Add space between each contact line */
+    font-weight: normal; /* Ensure the text is not bold */
+    color: white;
+  }
+
+  .sns i {
+    font-size: 22px;
+  }
+  
+  .menu-button {
+  
+    font-size: 2.4rem;
+  }
+
+  .close-button {
+    font-size: 2.4rem;
+  }
+  iframe {
+    width: 200%; /* Make it responsive */
+    
+    height: 350px; /* Adjust the height */
+    border: none; /* Remove border if any */
+  }
+  
+} 
+
+
+
+@media only screen and (max-width: 609px){
+    .name {
+      font-size: 1.7rem;
+    
+    }
+  
+    .section h2 {
+      font-size: 1.5rem;
+  
+    }
+    .footnotes h3 {
+      font-size: 0.80rem;
+      margin: 5px 0; /* Add space between each contact line */
+      font-weight: normal; /* Ensure the text is not bold */
+      color: white;
+    }
+  
+    .sns i {
+      font-size: 20px;
+    }
+    
+    .menu-button {
+    
+      font-size: 2.2rem;
+      top: 30px;
+      right: 10px;
+    }
+  
+    .close-button {
+      font-size: 2.2rem;
+      top: 50px;
+      right: 10px;
+    }
+ 
+
+      /* Back Button Styling */
+      .back-button {
+        position: absolute;
+        top: 100px;
+        left: 10px;
+  
+        font-size: 14px;
+        text-decoration: none;
+        padding: 10px 20px;
+        border: 2px solid #fff;
+        border-radius: 5px;
+       
+      }
+
+      
+
+      /* Next Button Styling */
+      .next-button {
+        position: absolute;
+        top: 100px;
+        right: 10px;
+    
+        font-size: 14px;
+        text-decoration: none;
+        padding: 10px 20px;
+        border: 2px solid #fff;
+        border-radius: 5px;
+        
+  }
+
+
+  /* Iframe Styling */
+iframe {
+  width: 110%; /* Make it responsive */
+  
+  height: 300px; /* Adjust the height */
+  border: none; /* Remove border if any */
+}
+
+
+  }
+
+  
+  
+
+  
+  @media only screen and (max-width: 370px){
+  
+   
+ 
+  }
+  
+  @media only screen and (max-width: 264px){
+    
+  
+   
+  }

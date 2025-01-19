@@ -1,0 +1,342 @@
+/* General Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', Times, sans-serif;
+  box-sizing: border-box;
+  overflow: auto;
+  background-color: black;
+  height: 100%; /* Ensure body takes full height */
+}
+
+/* Landing Page */
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto; /* Take full viewport height */
+  color: white;
+  position: relative;
+}
+
+/* Make the name link clickable */
+.name-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+/* Title styling */
+.name {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  font-weight: normal;
+  text-align: center;
+}
+
+/* Hover Effect */
+.name:hover {
+  color: rgb(0, 128, 255);
+  transition: 0.5s ease;
+}
+
+/* Project Section */
+.projects-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  min-height: 100vh; /* Ensure it takes full height */
+  padding-top: 120px;
+}
+
+.project {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.project img, .project video {
+  margin-bottom: 20px;
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* Menu Button */
+.menu-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  z-index: 10; /* Ensure it’s below the overlay menu */
+  transition: transform 0.3s ease;
+}
+
+.menu-button:hover {
+  transform: scale(1.2);
+}
+
+/* Menu Overlay */
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 20; /* Ensure the overlay is above everything else */
+}
+
+.menu-overlay.active {
+  display: flex;
+}
+
+
+
+/* Menu Content */
+.menu-content ul {
+  list-style: none; /* Remove the bullet points */
+  padding: 0;
+}
+
+.menu-content li {
+  margin: 15px 0;
+}
+
+.menu-content a {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem; /* Increase the font size */
+  transition: color 0.3s ease;
+}
+
+.menu-content a:hover {
+  color: #4281ff;
+}
+
+
+
+/* Close Button */
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  z-index: 30; /* Ensure close button is above the menu button */
+}
+
+
+
+
+
+
+.aftereffects {
+  width: 80%; /* Adjust to the size you want */
+  height: auto;
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+}
+
+.aftereffects video {
+  width: 50%;
+  height: auto;
+}
+
+
+/* Footer */
+.footnotes {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  line-height: 1.2;
+  text-align: center;
+  padding: 20px 0;
+  background: transparent;
+}
+
+.sns {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.sns a {
+  text-decoration: none;
+}
+
+.sns i {
+  font-size: 25px;
+  color: white;
+}
+
+.sns i:hover {
+  color: #4281ff;
+}
+
+
+
+
+
+
+/* responsive */
+
+@media only screen and (max-width: 965px){
+
+  .name {
+    font-size: 2rem;
+  
+  }
+
+  .section h2 {
+    font-size: 2rem;
+
+  }
+  .footnotes h3 {
+    font-size: 0.85rem;
+    margin: 5px 0; /* Add space between each contact line */
+    font-weight: normal; /* Ensure the text is not bold */
+    color: white;
+  }
+
+  .sns i {
+    font-size: 22px;
+  }
+  
+  .menu-button {
+  
+    font-size: 2.4rem;
+  }
+
+  .close-button {
+    font-size: 2.4rem;
+  }
+} 
+
+
+
+@media only screen and (max-width: 609px){
+    .name {
+      font-size: 1.7rem;
+    
+    }
+  
+    .section h2 {
+      font-size: 1.5rem;
+  
+    }
+    .footnotes h3 {
+      font-size: 0.80rem;
+      margin: 5px 0; /* Add space between each contact line */
+      font-weight: normal; /* Ensure the text is not bold */
+      color: white;
+    }
+  
+    .sns i {
+      font-size: 20px;
+    }
+    
+    .menu-button {
+    
+      font-size: 2.2rem;
+      top: 30px;
+      right: 10px;
+    }
+  
+    .close-button {
+      font-size: 2.2rem;
+      top: 50px;
+      right: 10px;
+    }
+ 
+
+      /* Back Button Styling */
+      .back-button {
+        position: absolute;
+        top: 100px;
+        left: 10px;
+  
+        font-size: 14px;
+        text-decoration: none;
+        padding: 10px 20px;
+        border: 2px solid #fff;
+        border-radius: 5px;
+       
+      }
+
+      
+
+      /* Next Button Styling */
+      .next-button {
+        position: absolute;
+        top: 100px;
+        right: 10px;
+    
+        font-size: 14px;
+        text-decoration: none;
+        padding: 10px 20px;
+        border: 2px solid #fff;
+        border-radius: 5px;
+        
+  }
+
+
+  /* Iframe Styling */
+iframe {
+  width: 110%; /* Make it responsive */
+  
+  height: 300px; /* Adjust the height */
+  border: none; /* Remove border if any */
+}
+
+/* Iframe Styling */
+iframe.sounds {
+  width: 80%; /* Set iframe width to 80% */
+  height: 100px; /* Fixed height */
+  border: none; /* Remove border */
+}
+
+  }
+
+  
+  
+
+  
+  @media only screen and (max-width: 370px){
+  
+   
+ 
+  }
+  
+  @media only screen and (max-width: 264px){
+    
+  
+   
+  }
