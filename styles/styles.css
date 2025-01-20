@@ -124,7 +124,7 @@ body, html {
 /* Hover effect to make background image brighter, more saturated, and zoom */
 .section:hover::before {
   transform: scale(1.05); /* Zoom effect on the background image only */
-  filter: brightness(100%) saturate(50%); /* Brighten and unsaturate the image */
+  filter: brightness(100%) saturate(100%); /* Brighten and unsaturate the image */
 }
 
 /* Section text */
