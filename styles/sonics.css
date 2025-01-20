@@ -95,7 +95,7 @@ body, html {
 /* Hover effect on image */
 .section:hover .section-image {
   transform: scale(1.05); /* Zoom effect on the background image only */
-  filter: brightness(100%) saturate(90%); /* Brighten and unsaturate the image */
+  filter: brightness(100%) saturate(100%); /* Brighten and unsaturate the image */
 }
 
 /* Section text style */
