@@ -3,62 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio website of SungYoon – exploring sound, visuals, and creative media.">
     <title>SungYoon Portfolio</title>
+    <link rel="icon" href="favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/fontawesome-free-6.2.1-web/css/all.min.css">
-     <link rel="icon" href="favicon.png" type="image/x-icon">
     <script defer src="script.js"></script>
 </head>
+
 <body>
-    <div class="landing-page">
-        <a href="index.html" class="name-link">
-            <h1 class="name">sungyoon.</h1>
+    <div class="title">
+        <a href="index.html" style="display:block; width:100%; text-decoration:none; color:inherit">
+            <h1 class="name" id="stretch-title">SUNGYOON</h1>
         </a>
-       
-        <div class="split">
-            <div class="section sonics" onclick="navigateTo('sonics')">
-                <div class="text-container">
-                    <h2>Sonics</h2>
-                </div>
-            </div>
-            <div class="section visuals" onclick="navigateTo('visuals')">
-                <div class="text-container">
-                    <h2>Visuals</h2>
-                </div>
-            </div>
-        </div>
-        <button class="menu-button" onclick="toggleMenu()">☰</button>
-        <div class="menu-overlay" id="menu">
-            <div class="menu-content">
-                <button class="close-button" onclick="toggleMenu()">&times;</button>
-                <ul>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    
-                </ul>
-            </div>
-        </div>
     </div>
+        
+    <div class="content">
+        
+        <section class="s1">
+            <div class = "about title container">
+                <h2 class="about heading">ABOUT</h2>
+                <div class="alinks">
+                    <span class="sub about "> 
+                        <a href="about.html"><span class="star">✧</span>ME</a>
+                    </span>
+                    <span class="sub contact ">
+                        <a href="cv.html"><span class="star">✧</span>CV/RESUME</a>
+                    </span>
+                </div>  
+            </div>
+        </section>
+
+        <section class="s2">
+            <div class ="sonics title container">
+                <h2 class="sonics heading">SONICS</h2>
+                <div class="slinks">
+                    <span class="sub design "><a href="sounddesign.html"><span class="star">✧</span>DESIGN</a></span>
+                    <span class="sub production "><a href="production.html"><span class="star">✧</span>PRODUCTION</a></span>
+                    <span class="sub performance "><a href="performance.html"><span class="star">✧</span>PERFORMANCE</a></span>
+                </div>
+            </div>
+        </section>
+            
+        <section class="s3">
+            <div class ="visuals title container">
+                <h2 class="visuals heading">VISUALS</h2>
+                    <div class="vlinks">
+                        <span class="sub film "><a href="film.html"><span class="star">✧</span>FILM</a></span>
+                        <span class="sub photography "><a href="photography.html"><span class="star">✧</span>PHOTOGRAPHY</a></span>
+                        <!-- <span class = "sub touch"> <a href = "performance.html" > Performance </a></span> -->
+                    </div>
+             </div>
+        </section>
+
+        <section class = "s4" >
+            <div class="projects title container">
+                <h2 class="projects heading">PROJECTS</h2>
+                <div class="plinks">
+                    <span class="sub research "><a href="research.html"><span class="star">✧</span>RESEARCH</a></span>
+                    <span class="sub projects "><a href="projects.html"><span class="star">✧</span>PROGRAMMING</a></span>
+                </div>
+            </div>
+          
+        </section>
+
+    </div>
+   
+    <footer class="footnotes">
+        <h4>+44 (0)7377 571543</h4>
+        <h4>sungyoonn00@gmail.com</h4>
+        <h4>United Kingdom</h4>
+        
+        <section>
+            <div class="sns">
+                 <a href="https://www.linkedin.com/in/sungyoon-choi" target="_blank" aria-label="YouTube" rel="noopener noreferrer">
+                    <i class="fa-brands fa-linkedin"></i> 
+                </a>
+                <a href="https://www.instagram.com/__sungyoon/" target="_blank" aria-label="Instagram" rel="noopener noreferrer">
+                    <i class="fa-brands fa-instagram"></i>
+                </a> 
+                <a href="https://www.youtube.com/channel/UC0bxDP5WRLY-XFPPW-KPyXw" target="_blank" aria-label="YouTube" rel="noopener noreferrer">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>  
+                <a href="https://soundcloud.com/user-366314391?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank" aria-label="SoundCloud" rel="noopener noreferrer">
+                    <i class="fa-brands fa-soundcloud"></i>
+                </a>  
+            </div>
+        </section>
+    </footer>
 </body>
-<footer class="footnotes">
-    <h3>United Kingdom</h3>
-    <h3>sungyoonn00@gmail.com</h3>
-    <h3>+44 07377 571543</h3>
-    <section>
-        <div class="sns">
-            <a href="https://www.instagram.com/__sungyoon/" target="_blank">
-                <i class="fa-brands fa-instagram"></i>
-            </a> 
-            <a href="https://www.youtube.com/channel/UC0bxDP5WRLY-XFPPW-KPyXw" target="_blank">
-                <i class="fa-brands fa-youtube"></i>
-            </a>  
-            <a href="https://soundcloud.com/user-366314391?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">
-                <i class="fa-brands fa-soundcloud"></i>
-            </a>  
-        </div>
-    </section>
-
-
 
 </html>
