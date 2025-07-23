@@ -10,6 +10,9 @@
     <script defer src="script2.js"></script>
 </head>
 <body>
+    <audio id="bg-music" autoplay loop>
+        <source src="Nico Morano, Mewhy - Juno Love (Original Mix).mp3" type="audio/mpeg">
+    </audio>
     
      <div class="title">
         <a href="index.html" style="text-decoration:none; color:inherit">
@@ -92,6 +95,23 @@
         </section>
     </footer>
 
+
+<button id="toggle-music">Play/Pause</button>
+
+<script>
+  const audio = document.getElementById('bg-music');
+  const toggleBtn = document.getElementById('toggle-music');
+
+  toggleBtn.addEventListener('click', () => {
+    if (audio.paused) {
+      audio.play();
+      toggleBtn.textContent = 'Pause Music';
+    } else {
+      audio.pause();
+      toggleBtn.textContent = 'Play Music';
+    }
+  });
+</script>
 
 
 </html>
