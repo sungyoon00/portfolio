@@ -1,0 +1,412 @@
+@font-face {
+  font-family: 'Migra';
+  font-display: swap;
+  font-style: normal;
+  font-weight: normal;
+  src: url('fonts/Migra-Extrabold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Beni';
+  font-display: swap;
+  font-style: normal;
+  font-weight: normal;
+  src: url('fonts/BeniRegular.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'replica';
+  font-display: swap;
+  font-style: normal;
+  font-weight: normal;
+  src: url('fonts/fonnts.com-ReplicaPro.ttf') format('truetype');
+}
+
+/* Universal box-sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-image: url('back.jpg');
+  background-size: cover;           /* makes it stretch */
+  background-position: center;      /* centers the image */
+  background-repeat: no-repeat;     /* prevents tiling */
+  background-attachment: fixed;
+  z-index: -1; /* push behind everything else */
+}
+
+
+/* ////////////////////////////////////// Title styling //////////////////////////////////////// */
+.title {
+  margin: 0;
+  overflow: hidden;
+  width: 100%;
+  padding-left: calc(0.2rem + 1.5vw);;
+  padding-right: calc(0.2rem + 1.5vw);;
+}
+
+.name {
+  color: #e8eff0;
+  display: inline-block;
+  font-family: 'Migra';
+  font-size: calc(1rem + 9vw);
+  font-weight: normal;
+  margin: 0;
+  padding-top: 0.5rem;
+  padding-bottom: calc(4rem + 2vw);
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+  transition: color 0.2s ease;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.name:hover {
+  color:  rgb(0, 48, 179);
+}
+
+
+h2 {
+  color: #e8eff0;
+  font-family: grotesk, sans-serif;
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: 0.5rem;
+}
+
+/* ///////////////// about, projects, sonics, visuals section styling ////////////////// */
+.about h2,
+.projects h2 {
+  font-size: calc(0.5rem + 2.5vw);
+  letter-spacing: 0.1em;
+  padding-top: 1.1vw;
+}
+
+.sonics h2,
+.visuals h2 {
+  font-size: calc(0.8rem + 5vw);
+  letter-spacing: 0.1em; 
+  padding-top: 1.1vw;
+}
+
+.about h2,
+.visuals h2 {
+  margin-right: calc(0.1rem + 2vw);
+}
+
+.sonics h2,
+.projects h2 {
+  padding-left: calc(0.1rem + 2vw); 
+}
+
+
+.s1 {
+  text-align: right;
+}
+
+.s2 {
+  text-align: left;
+}
+
+.s3 {
+  text-align: right;
+}
+
+.s4 {
+  text-align: left;
+  padding-bottom: 2rem;
+}
+
+.vlinks,
+.alinks {
+  margin-right: calc(0.2rem + 2.5vw);;
+  padding-bottom: 0.5vw;
+}
+
+.slinks,
+.plinks {
+  margin-left: calc(0.1rem + 0.5vw);
+  padding-bottom: 0.5vw;
+}
+
+
+.sub {
+  font-family: 'Beni';
+  color: #e8eff0;
+  font-size: calc(0.5rem + 1.9vw);
+  opacity: 0.55;
+  transition: opacity 0.3s;
+  letter-spacing: 0.05em;
+  text-align: left;
+}
+
+.sub:not(:last-child) {
+  margin-right: calc(0.1rem + 0.5vw);
+}
+
+.sub:hover {
+  opacity: 1;
+}
+
+.star {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.sub:hover .star {
+  opacity: 1;
+}
+
+/* //////////////////////////////////////// Footnotes ///////////////////////////////////////////////// */
+
+.footnotes {
+  bottom: 0;
+  line-height: 1.2;
+  padding: 0;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  z-index: 5;
+}
+/* Contact Info Styling */
+.footnotes h4 {
+  font-family: grotesk, sans-serif;
+  color: #e8eff0;
+  font-size: calc(0.6rem + 0.5vw);
+  font-weight: normal;
+  margin: 5px 0;
+}
+
+
+/* Social media icon container */
+.sns {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.sns a {
+  text-decoration: none;
+}
+
+.sns i {
+  color: #e8eff0;
+  font-size: calc(1rem + 0.7vw);
+  margin: 0 5px;
+  padding-top: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+/* Icon hover colors */
+.sns i:hover {
+  color:  rgb(0, 48, 179);
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+/* ////////////////////////////////////// Responsive tweaks //////////////////////////////////////// */
+
+/* RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE  */
+@media (max-width: 1700px) {
+
+.about h2,
+.projects h2 {
+  padding-top: calc(0.1rem + 0.7vw);
+}
+
+.sonics h2,
+.visuals h2 {
+  padding-top: calc(0.1rem + 0.7vw);
+}
+
+.vlinks,
+.alinks {
+  padding-bottom: 1vw;
+}
+
+.slinks,
+.plinks {
+  padding-bottom: 1vw;
+}
+
+}
+
+/* RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE  */
+
+@media (max-width: 1500px) {
+
+.about h2,
+.projects h2 {
+  padding-top: calc(0.1rem + 2vw);
+}
+
+.sonics h2,
+.visuals h2 {
+  padding-top: calc(0.1rem + 2vw);
+}
+
+.vlinks,
+.alinks {
+  padding-bottom: 1vw;
+}
+
+.slinks,
+.plinks {
+  padding-bottom: 1vw;
+}
+
+}
+
+/* RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE  */
+
+@media (max-width: 1400px) {
+
+.about h2,
+.projects h2 {
+  padding-top: calc(0.1rem + 3vw);
+}
+
+.sonics h2,
+.visuals h2 {
+  padding-top: calc(0.1rem + 3vw);
+}
+
+.vlinks,
+.alinks {
+  padding-bottom: calc(0.1rem + 1vw);
+}
+
+.slinks,
+.plinks {
+  padding-bottom: calc(0.1rem + 1vw);
+}
+
+}
+
+/* RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE  */
+
+@media (max-width: 1200px) {
+
+.about h2,
+.projects h2 {
+  padding-top: calc(0.1rem + 4vw);
+}
+
+.sonics h2,
+.visuals h2 {
+  padding-top: calc(0.1rem + 4vw);
+}
+
+.vlinks,
+.alinks {
+  padding-bottom: calc(0.1rem + 2vw);
+}
+
+.slinks,
+.plinks {
+  padding-bottom: calc(0.1rem + 2vw);
+}
+
+}
+
+/* RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE  */
+
+@media (max-width: 1000px) {
+
+.vlinks,
+.alinks {
+  padding-bottom: calc(0.1rem + 6vw);
+}
+
+.slinks,
+.plinks {
+  padding-bottom: calc(0.1rem + 6vw);
+}
+
+}
+
+
+
+
+
+
+@media (max-width: 800px) {
+ 
+.about h2,
+.projects h2 {
+  font-size: calc(0.5rem + 3vw);
+  padding-top: calc(0.1rem + 4vw);
+}
+
+.sonics h2,
+.visuals h2 {
+  font-size: calc(0.8rem + 6vw);
+  padding-top: calc(0.1rem + 4vw);
+}
+
+.vlinks,
+.alinks {
+  padding-bottom: calc(0.1rem + 10vw);
+}
+
+.slinks,
+.plinks {
+  padding-bottom: calc(0.1rem + 10vw);
+}
+
+
+  .visuals h2 {
+    text-align: left;
+    padding-left: calc(0.1rem + 2vw); 
+  }
+
+  .s3 {
+    text-align: left;
+  }
+  .vlinks
+  {
+   margin-left: calc(0.1rem + 0.5vw);
+  }
+}
+
+
+@media (max-width: 500px) {
+ 
+.about h2,
+.projects h2 {
+  font-size: calc(0.5rem + 3vw);
+  padding-top: calc(0.1rem + 4vw);
+}
+
+.sonics h2,
+.visuals h2 {
+  font-size: calc(0.8rem + 6vw);
+  padding-top: calc(0.1rem + 4vw);
+}
+
+.vlinks,
+.alinks {
+  padding-bottom: calc(0.1rem + 17vw);
+}
+
+.slinks,
+.plinks {
+  padding-bottom: calc(0.1rem + 17vw);
+}
+}
