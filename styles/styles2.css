@@ -13,32 +13,59 @@
   src: url('fonts/BeniRegular.ttf') format('truetype');
 }
 
-
 @font-face {
-  font-family: 'East';
+  font-family: 'Grotesk';
   font-display: swap;
   font-style: normal;
   font-weight: normal;
-  src: url('fonts/EastmanRomanTrial-Bold.otf') format('truetype');
+  src: url('fonts/OverusedGrotesk-Book.otf') format('truetype');
 }
 
 @font-face {
-  font-family: 'Replica';
+  font-family: 'GroteskBold';
   font-display: swap;
   font-style: normal;
   font-weight: normal;
-  src: url('fonts/fonnts.com-ReplicaPro.ttf') format('truetype');
+  src: url('fonts/OverusedGrotesk-SemiBold.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'GroteskMedium';
+  font-display: swap;
+  font-style: normal;
+  font-weight: normal;
+  src: url('fonts/OverusedGrotesk-Medium.otf') format('truetype');
 }
 
 h1, h2, h3 {
   font-weight: normal;
-  color: #e8eff0;
+  color: #ffffff;
 }
 
 
 /* Universal box-sizing */
 *, *::before, *::after {
   box-sizing: border-box;
+}
+#toggle-music {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(255,255,255,0.2);
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  font-family: 'Grotesk', sans-serif;
+  font-size: calc(0.5rem + 0.7vw);
+  cursor: pointer;
+  backdrop-filter: blur(5px);
+  border-radius: 5px;
+  transition: background 0.3s ease;
+  z-index: 9999;
+}
+
+#toggle-music:hover {
+  background: rgba(255,255,255,0.4);
 }
 
 h1 {
@@ -52,7 +79,7 @@ html, body {
   width: 100%;
   /* background-color: #e1e2e7; */
   padding-top: 0.2rem;
-  background-image: url('back.jpg');
+  background-image: url('wall.jpg');
   background-size: cover;           /* makes it stretch */
   background-position: center;      /* centers the image */
   background-repeat: no-repeat;     /* prevents tiling */
@@ -86,7 +113,7 @@ html, body {
 }
 
 .sub-group {
-  font-family: "Beni", sans-serif;
+  font-family: "GroteskBold";
   font-size: calc(0.8rem + 1vw);
   letter-spacing: 0.05em;
   opacity: 0.7;
@@ -118,8 +145,8 @@ iframe {
 }
 
 .description {
-  font-family: grotesk, sans-serif;
-  color: #e8eff0;
+  font-family: "Grotesk", sans-serif;
+  color: #ffffff;
   font-size: calc(0.5rem + 1vw);
   max-width: calc(1rem + 80vw);
   margin: 0 auto 10px auto;
@@ -131,7 +158,7 @@ iframe {
 
 /* Hover Effect */
 .name:hover {
-  color:  rgb(0, 48, 179);
+  color:  rgb(0, 147, 238);
   transition:  0.5s ease;
 }
 
@@ -237,7 +264,7 @@ iframe {
   margin: 0 auto 10px auto;
   text-align: center;
   max-width: 92vw;
-  color: #e8eff0;
+  color: #ffffff;
 }
 
 /* ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT  */
@@ -248,7 +275,7 @@ iframe {
   margin: 0 auto;
   text-align: left;
   padding-left: calc(0.7rem + 1.2vw);
-  color: #e8eff0;
+  color: #ffffff;
 
 }
 .about-flex {
@@ -289,6 +316,28 @@ iframe {
   margin-left: 2vw;
   margin-bottom: 1vw;
 }
+
+ 
+/* CV CV CV CV CV CV CV CV CV CV CV CV CV CV CV CV CV CV CV CV CV CV CV CV CV CV CV CV CV CV CV CV CV CV CV CV CV CV CV CV CV CV CV CV CV CV CV CV  */
+
+.cv.container {
+  width: 100%;
+  height: 100%;
+  overflow-x: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.cv-pdf {
+  width: calc(8rem + 60vw);
+  height: calc(25rem + 100vw);
+  border: none;
+}
+
 /* FOOTNOTES FOOTNOTES FOOTNOTES FOOTNOTES FOOTNOTES FOOTNOTES FOOTNOTES FOOTNOTES FOOTNOTES FOOTNOTES FOOTNOTES FOOTNOTES FOOTNOTES FOOTNOTES FOOTNOTES   */
 
 .footnotes {
@@ -303,7 +352,7 @@ iframe {
 /* Contact Info Styling */
 .footnotes h4 {
   font-family: grotesk, sans-serif;
-  color: #e8eff0;
+  color: #ffffff;
   font-size: calc(0.6rem + 0.5vw);
   font-weight: normal;
   margin: 5px 0;
@@ -322,7 +371,7 @@ iframe {
 }
 
 .sns i {
-  color: #e8eff0;
+  color: #ffffff;
   font-size: calc(1rem + 0.7vw);
   margin: 0 5px;
   padding-top: 0.5rem;
