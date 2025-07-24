@@ -158,7 +158,7 @@ iframe {
 
 /* Hover Effect */
 .name:hover {
-  color:  rgb(0, 147, 238);
+  color:  rgb(4, 0, 227);
   transition:  0.5s ease;
 }
 
@@ -380,7 +380,7 @@ iframe {
 
 /* Icon hover colors */
 .sns i:hover {
-  color:  rgb(0, 48, 179);
+  color:  rgb(4, 0, 227);
 }
 
 
